@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: poppins;
+  padding: 1% 5%;
+}
+
+/* layout */
+.container {
+  max-width: 1217px;
+  margin: 0 auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  justify-content: center;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* tipografia */
+h1 {
+  font-family: serif;
+  font-size: 64px;
+  font-weight: bold;
+  color: #023047;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.orange {
+  color: #FF7120;
+}
+
+/* header */
+header {
+  padding-top: 40px;
+  display: flex;
+  flex: 1;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+header nav {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul li {
+  display: inline;
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+header nav li a:hover {
+  font-weight: bold;
+  color: #FF7120;
+}
+
+.active a {
+  color: #FF7120;
+  font-weight: bold;
+}
+
+.active::after {
+  content: "•";
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  color: #FF7120;
+  font-size: 22px;
+}
+
+/* botão */
+.buttons {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.buttons div {
+  margin: 0 10px;
+}
+
+.button-login {
+  background-color: #023047;
+  display: flex;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.notifications {
+  display: block;
+  width: 10px;
+  background-color: red;
+  color: #ffffff;
+  border-radius: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  text-align: center;
+  padding: 3px;
+  z-index: 2;
+  position: absolute;
+  margin-left: 12px;
+  margin-top: -4px;
+}
+
+/* formulário */
+form {
+  margin-top: 30px;
+  display: flex;
+}
+
+form input {
+  flex: 3;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 1px solid #CCCCCC;
+  box-shadow: 0px 1px 20px #CCCCCC;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+form button {
+  flex: 1;
+  background-color: #023047;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 15px 10px;
+  border: none;
+  font-size: 24px;
+}
+
+/* imagens */
+.icon {
+  width: 24px;
+}
+
+.cacto {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 35px;
+}
+
+.pizza {
+  position: absolute;
+  margin-top: 400px;
+  margin-right: 15px;
+  z-index: 2;
+}
+
+/* página Sobre */
+.conteudo_about {
+  max-width: 1224px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+  
+}
+
+.conteudo_about img {
+  height: 295px;
+  padding-top:150px;
+}
+
+.textoAbout{
+  max-width: 751px;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  line-height: 37px;
+  
+}
+.textoAbout h2{
+  color: #FF7120;
+  font-size: 18px;
+}
+
+#sobreSerton{
+  font-size: 45px;
+  padding-top: 3%;
+}
+
+#paragrafos {
+  font-size: 24px;
+  padding-top: 3%;
+}
+
+/* media queries */
+@media (max-width: 992px) {
+  body {
+    padding: 10px;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  header nav {
+    display: none;
+  }
+}
+
+.formCategoria{
+  width: 100%;
+}
+
+.formCategoria img {
+  height: 39px;
+}
+
+.formCategoria button {
+  max-width: 103px;
+}
+
+.entrePesquisaeItens{
+  font-size: 36px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 0;
+  font-weight: bolder;
+  color:#023047;
+}
+
+.categItem1{
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+  width: 361px;
+}
+.categImgItem {
+  height: 200px;
+}
+.estrelaCategItem{
+  height: 29px;
+}
+.estrela_numero{
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+}
+.estrela_numero p{
+  padding-top: 8px;
+  padding-left: 10px;
+}
+.itemTitle{
+  font-size: 24px;
+}
