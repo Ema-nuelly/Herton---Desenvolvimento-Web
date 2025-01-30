@@ -21,7 +21,7 @@
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
-            <div class="buttons">
+            <div class="buttons">  <!-- simbolos de pesquisa, de loja e de login -->
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -43,31 +43,166 @@
                 </div>
             </div>
         </header>
-        <section>
+        
+        <div class="formCateg">
             <form action="#" class="formCategoria">
                 <input type="text" placeholder="Pesquisar" />
-                <button ><img src="assets\images\search.png" alt="ícone de pesquisar"></button>
+                <button aria-label="pesquisar">
+                    <img src="assets\images\search.png" alt="ícone de pesquisar">
+                </button>
             </form>
+        </div>
+        <div class="entre-form-categ-e-itens">
+            <p>Restaurantes perto de mim</p>
+            <a href="#" style="font-size: 20px; text-decoration: none;">Ver todos</a>
+        </div>
+        
+        <section class="sectionCateg">
+            <article class="caixa-restaurante"> <!-- primeiro item -->
+                <img src="assets\images\categItem1.png" alt="pizza sendo servida" class="caixa-img">
 
-            <div class="entrePesquisaeItens">
-                <p>Restaurantes perto de mim</p>
-                <p>Ver todos</p>
-            </div>
+                <a href="restaurante.html" style="text-decoration: none;">
+                    <p class="caixa-nome">Brunch & Munch</p>
+                </a>
 
-            <div class="categItem1">
-                <img src="assets\images\categItem1.png" alt="pizza tirando uma faria" class="categImgItem">
-                <p class="itemTitle">Brunch & Munch</p>
-                <div class="estrela_numero">
-                    <img src="assets\images\estrelaAvalicacao.png" alt="estrelinha" class="estrelaCategItem">
+                <div class="caixa-avaliacao">
+                    <img src="assets\images\estrelaAvalicacao.png" alt="estrelinha" class="caixa-estrela">
                     <p>4.5</p>
                 </div>
                 
-                <div>
-                    <img src="assets\images\iconeLocalizacao.png" alt="localização">
+                <div class="caixa-localizacao-endereco">
+                    <img src="assets\images\iconeLocalizacao.png" alt="localização" class="caixa-localizacao">
                     <p>Endereço<br>Rua João Carlos  Menezes - 100 </p>
                 </div>
+            </article>
+
+            <article class="caixa-restaurante"> <!-- segundo item-->
+                <img src="assets\images\hamburguer.jpeg" alt="pizza sendo servida" class="caixa-img">
+
+                <p class="caixa-nome">Hamburgueria Fall</p>
+
+                <div class="caixa-avaliacao">
+                    <img src="assets\images\estrelaAvalicacao.png" alt="estrelinha" class="caixa-estrela">
+                    <p>4.5</p>
+                </div>
                 
-            </div>
+                <div class="caixa-localizacao-endereco">
+                    <img src="assets\images\iconeLocalizacao.png" alt="localização" class="caixa-localizacao">
+                    <p>Endereço<br>Rua João Carlos  Menezes - 100 </p>
+                </div>
+            </article>
+
+            <article class="caixa-restaurante"> <!-- terceiro item-->
+                <img src="assets\images\resto-cheio.jpeg" alt="pizza sendo servida" class="caixa-img">
+
+                <p class="caixa-nome">Restaurante Sabor</p>
+
+                <div class="caixa-avaliacao">
+                    <img src="assets\images\estrelaAvalicacao.png" alt="estrelinha" class="caixa-estrela">
+                    <p>4.5</p>
+                </div>
+                
+                <div class="caixa-localizacao-endereco">
+                    <img src="assets\images\iconeLocalizacao.png" alt="localização" class="caixa-localizacao">
+                    <p>Endereço<br>Rua João Carlos  Menezes - 100 </p>
+                </div>
+            </article>
+            
+            <article class="caixa-restaurante"> <!-- quarto item-->
+                <img src="assets\images\categItem1.png" alt="pizza sendo servida" class="caixa-img">
+
+                <p class="caixa-nome">Brunch & Munch</p>
+
+                <div class="caixa-avaliacao">
+                    <img src="assets\images\estrelaAvalicacao.png" alt="estrelinha" class="caixa-estrela">
+                    <p>4.5</p>
+                </div>
+                
+                <div class="caixa-localizacao-endereco">
+                    <img src="assets\images\iconeLocalizacao.png" alt="localização" class="caixa-localizacao">
+                    <p>Endereço<br>Rua João Carlos  Menezes - 100 </p>
+                </div>
+            </article>
+
+            <article class="caixa-restaurante"> <!-- quinto item-->
+                <img src="assets\images\hamburguer.jpeg" alt="pizza sendo servida" class="caixa-img">
+
+                <p class="caixa-nome">Hamburgueria Fall</p>
+
+                <div class="caixa-avaliacao">
+                    <img src="assets\images\estrelaAvalicacao.png" alt="estrelinha" class="caixa-estrela">
+                    <p>4.5</p>
+                </div>
+                
+                <div class="caixa-localizacao-endereco">
+                    <img src="assets\images\iconeLocalizacao.png" alt="localização" class="caixa-localizacao">
+                    <p>Endereço<br>Rua João Carlos  Menezes - 100 </p>
+                </div>
+            </article>
+
+            <article class="caixa-restaurante"> <!-- sexto item-->      
+                <img src="assets\images\resto-cheio.jpeg" alt="pizza sendo servida" class="caixa-img">
+
+                <p class="caixa-nome">Restaurante Sabor</p>
+
+                <div class="caixa-avaliacao">
+                    <img src="assets\images\estrelaAvalicacao.png" alt="estrelinha" class="caixa-estrela">
+                    <p>4.5</p>
+                </div>
+                
+                <div class="caixa-localizacao-endereco">
+                    <img src="assets\images\iconeLocalizacao.png" alt="localização" class="caixa-localizacao">
+                    <p>Endereço<br>Rua João Carlos  Menezes - 100 </p>
+                </div>
+            </article>
+             
+            <article class="caixa-restaurante"> <!-- septimo item-->
+                <img src="assets\images\categItem1.png" alt="pizza sendo servida" class="caixa-img">
+
+                <p class="caixa-nome">Brunch & Munch</p>
+
+                <div class="caixa-avaliacao">
+                    <img src="assets\images\estrelaAvalicacao.png" alt="estrelinha" class="caixa-estrela">
+                    <p>4.5</p>
+                </div>
+                
+                <div class="caixa-localizacao-endereco">
+                    <img src="assets\images\iconeLocalizacao.png" alt="localização" class="caixa-localizacao">
+                    <p>Endereço<br>Rua João Carlos  Menezes - 100 </p>
+                </div>
+            </article>
+
+            <article class="caixa-restaurante"> <!-- oitavo item-->
+                <img src="assets\images\hamburguer.jpeg" alt="pizza sendo servida" class="caixa-img">
+
+                <p class="caixa-nome">Hamburgueria Fall</p>
+
+                <div class="caixa-avaliacao">
+                    <img src="assets\images\estrelaAvalicacao.png" alt="estrelinha" class="caixa-estrela">
+                    <p>4.5</p>
+                </div>
+                
+                <div class="caixa-localizacao-endereco">
+                    <img src="assets\images\iconeLocalizacao.png" alt="localização" class="caixa-localizacao">
+                    <p>Endereço<br>Rua João Carlos  Menezes - 100 </p>
+                </div>
+            </article>
+
+            <article class="caixa-restaurante"> <!-- nono item-->
+                <img src="assets\images\resto-cheio.jpeg" alt="pizza sendo servida" class="caixa-img">
+
+                <p class="caixa-nome">Restaurante Sabor</p>
+
+                <div class="caixa-avaliacao">
+                    <img src="assets\images\estrelaAvalicacao.png" alt="estrelinha" class="caixa-estrela">
+                    <p>4.5</p>
+                </div>
+                
+                <div class="caixa-localizacao-endereco">
+                    <img src="assets\images\iconeLocalizacao.png" alt="localização" class="caixa-localizacao">
+                    <p>Endereço<br>Rua João Carlos  Menezes - 100 </p>
+                </div>
+            </article>
         </section>
            
     </div>

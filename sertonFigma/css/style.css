@@ -1,4 +1,4 @@
-* {
+* { /* reset css */
   margin: 0;
   padding: 0;
 }
@@ -14,10 +14,18 @@ body {
   margin: 0 auto;
 }
 
-section {
+.sectionIndex {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: 50px;
+}
+.sectionCateg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .left {
@@ -153,7 +161,7 @@ form {
   display: flex;
 }
 
-form input {
+.formIndex input {   
   flex: 3;
   padding: 15px 20px;
   border-radius: 10px;
@@ -163,7 +171,7 @@ form input {
   margin-right: 10px;
 }
 
-form button {
+.formIndex button {
   flex: 1;
   background-color: #023047;
   color: #ffffff;
@@ -172,6 +180,36 @@ form button {
   border: none;
   font-size: 24px;
 }
+
+.formCateg input {   
+  flex: 3;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 1px solid #CCCCCC;
+  box-shadow: 0px 1px 20px #CCCCCC;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.formCateg button {
+  flex: 1;
+  background-color: #023047;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 15px 10px;
+  border: none;
+  font-size: 24px;
+  max-width: 103px;
+}
+
+.formCategoria{
+  width: 100%;
+}
+
+.formCategoria img {
+  height: 39px;
+}
+
 
 /* imagens */
 .icon {
@@ -202,7 +240,9 @@ form button {
   font-weight: bolder;
   
 }
-
+.container2 {
+  max-width: 1225px;
+}
 .conteudo_about img {
   height: 295px;
   padding-top:150px;
@@ -247,49 +287,188 @@ form button {
   }
 }
 
-.formCategoria{
-  width: 100%;
-}
 
-.formCategoria img {
-  height: 39px;
-}
 
-.formCategoria button {
-  max-width: 103px;
-}
-
-.entrePesquisaeItens{
+.entre-form-categ-e-itens{
   font-size: 36px;
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 40px 0;
+  /*padding: 40px 0;*/
   font-weight: bolder;
   color:#023047;
 }
 
-.categItem1{
+.caixa-restaurante{
   font-family: Arial, sans-serif;
   font-weight: bolder;
-  width: 361px;
+  max-width: 361px;
+  background: white;
+  border-radius: 12px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; 
+  margin-bottom: 20px;
+
 }
-.categImgItem {
+.caixa-img {
   height: 200px;
 }
-.estrelaCategItem{
+.caixa-estrela {
   height: 29px;
 }
-.estrela_numero{
+.caixa-localizacao{
+  height: 43px;
+}
+.caixa-avaliacao{
   display: flex;
   flex-direction: row;
   font-size: 18px;
 }
-.estrela_numero p{
+.caixa-localizacao-endereco{
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+}
+.caixa-avaliacao p{
   padding-top: 8px;
   padding-left: 10px;
 }
-.itemTitle{
+.caixa-nome{
   font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .caixa-restaurante {
+    width: 100%;
+  }
+}
+
+.nome-resto-delivery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /*margin: 20px 0;*/
+  margin-top: 7%;
+  border-radius: 10px;
+}
+
+.horario {
+  background-color: #1cc34b;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px 20px;
+  border: none;
+  font-size: 18px;
+  max-width: 103px;
+}
+
+.horario2 {
+  background-color: #d9d9d9;
+  color: #000000;
+  border-radius: 5px;
+  padding: 5px 20px;
+  border: none;
+  font-size: 18px;
+  max-width: 103px;
+}
+.caixa-localizacao-endereco-resHtml{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+.endereco-hora {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  gap: 15px;
+}
+
+.caixa-hora-hora{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.menu-nav {
+  gap: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #023047; 
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+.menu-nav-list-item {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #023047;
+}
+
+.menu-nav-list img {
+  margin-right: 10px;
+  height: 20px;
+}
+
+.menu-nav-list-item-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 30px;  
+  
+}
+
+.active-menu{
+  background-color: #023047;
+  color: white;
+  border-radius: 30px;
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 286px;
+  max-height: 245px;
+  z-index: 0;
+}
+.card img{
+  max-height: 245px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 10px;
+}
+.conteudo-do-card {
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  color: white;
+  flex-direction: column;
+  padding: 5px;
+  margin-top: 160px;
+}
+
+.botao-order {
+  text-decoration: none;
+  color: white;
 }
