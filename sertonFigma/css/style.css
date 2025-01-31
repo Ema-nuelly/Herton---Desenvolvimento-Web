@@ -443,32 +443,50 @@ form {
   color: white;
   border-radius: 30px;
 }
-
+.card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
 .card {
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 286px;
-  max-height: 245px;
-  z-index: 0;
+  max-width: 245px;
+  position: relative; 
 }
-.card img{
-  max-height: 245px;
-  position: absolute;
-  z-index: 1;
+
+.card img {
+  width: 100%; 
+  height: auto; 
+  height: 286px;
+  object-fit: cover;
+  object-position: center;
   border-radius: 10px;
 }
+
 .conteudo-do-card {
   display: flex;
-  z-index: 2;
   position: absolute;
-  color: white;
+  bottom: 10px; 
+  left: 10px;
   flex-direction: column;
-  padding: 5px;
-  margin-top: 160px;
+  color: white;
+  padding: 10px;
+  z-index: 2;
+  max-width: 90%; 
 }
 
 .botao-order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-decoration: none;
   color: white;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.botao-order img {
+  max-width: 9px; 
+  height: auto;
 }
