@@ -15,6 +15,26 @@ document.addEventListener("DOMContentLoaded", () => {
     leftArrow.addEventListener('click', () => {
         cardContainer.scrollLeft -= 250;
     });
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    cardContainer.addEventListener('touchstart', (event) => {
+        touchStartX = event.touches[0].clientX;
+    });
+
+    cardContainer.addEventListener('touchend', (event) => {
+        touchEndX = event.changedTouches[0].clientX;
+    });
+
+    cardContainer.addEventListener('touchend', () => {
+        const distancia = touchEndX - touchStartX;
+        if (distancia > 50) {
+            cardContainer.scrollLeft -= 250;
+        } else if (distancia < -50) {
+            cardContainer.scrollLeft += 250;
+        }
+    });
 });
 
 const menuH = document.querySelector('.menu-h-button');
@@ -31,3 +51,4 @@ document.addEventListener('click', (event) => {
         menupequeno.classList.remove('active');
     }
 });
+

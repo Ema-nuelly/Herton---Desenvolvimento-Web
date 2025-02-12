@@ -823,6 +823,10 @@ footer li {
     margin-left: 160px;
     min-width: 600px;
   }
+  .indexFooter-restaurante {
+    display: flex;
+    flex-direction: column;
+  }
   .logo img{
     min-width: 300px;
   }
@@ -886,5 +890,20 @@ footer li {
   }
   .f-about {
     margin-top: -50px;
+  }
+  .entre-form-categ-e-itens {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+  .entre-form-categ-e-itens p {
+    font-size: 35px;
+  }
+  .caixa-restaurante {
+    width: 400px;
+  }
+  .menu-nav-list {
+    display: flex;
+    flex-direction: column;
   }
 }
