@@ -16,3 +16,18 @@ document.addEventListener("DOMContentLoaded", () => {
         cardContainer.scrollLeft -= 250;
     });
 });
+
+const menuH = document.querySelector('.menu-h-button');
+const menupequeno = document.querySelector('.index-nav-telinha');
+
+if (menuH && menupequeno) {
+    menuH.addEventListener('click', () => {
+      menupequeno.classList.toggle('active');
+  });
+}
+
+document.addEventListener('click', (event) => {
+    if (!menupequeno.contains(event.target) && !menuH.contains(event.target)) {
+        menupequeno.classList.remove('active');
+    }
+});

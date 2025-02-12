@@ -1,4 +1,5 @@
-* { /* reset css */
+* {
+  /* reset css */
   margin: 0;
   padding: 0;
 }
@@ -21,6 +22,7 @@ body {
   margin-top: 50px;
   margin-bottom: 130px;
 }
+
 .sectionCateg {
   display: flex;
   flex-direction: row;
@@ -163,7 +165,7 @@ form {
   display: flex;
 }
 
-.formIndex input {   
+.formIndex input {
   flex: 3;
   padding: 15px 20px;
   border-radius: 10px;
@@ -183,7 +185,7 @@ form {
   font-size: 24px;
 }
 
-.formCateg input {   
+.formCateg input {
   flex: 3;
   padding: 15px 20px;
   border-radius: 10px;
@@ -204,7 +206,7 @@ form {
   max-width: 103px;
 }
 
-.formCategoria{
+.formCategoria {
   width: 100%;
 }
 
@@ -240,31 +242,34 @@ form {
   padding-bottom: 100px;
   font-family: Arial, sans-serif;
   font-weight: bolder;
-  
+
 }
+
 .container2 {
   max-width: 1225px;
 }
+
 .conteudo_about img {
   height: 295px;
-  padding-top:150px;
+  padding-top: 150px;
 }
 
-.textoAbout{
+.textoAbout {
   max-width: 751px;
   padding-left: 5%;
   display: flex;
   flex-direction: column;
   gap: 5%;
   line-height: 37px;
-  
+
 }
-.textoAbout h2{
+
+.textoAbout h2 {
   color: #FF7120;
   font-size: 18px;
 }
 
-#sobreSerton{
+#sobreSerton {
   font-size: 45px;
   padding-top: 3%;
 }
@@ -289,7 +294,7 @@ form {
   }
 }
 
-.entre-form-categ-e-itens{
+.entre-form-categ-e-itens {
   font-size: 36px;
   font-family: Arial, sans-serif;
   display: flex;
@@ -297,48 +302,54 @@ form {
   justify-content: space-between;
   padding: 40px 0;
   font-weight: bolder;
-  color:#023047;
+  color: #023047;
 }
 
-.caixa-restaurante{
+.caixa-restaurante {
   font-family: Arial, sans-serif;
   font-weight: bolder;
   max-width: 361px;
   background: white;
-  border-radius: 12px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 8px; 
+  gap: 8px;
   margin-bottom: 20px;
 
 }
+
 .caixa-img {
   height: 200px;
 }
+
 .caixa-estrela {
   height: 29px;
 }
-.caixa-localizacao{
+
+.caixa-localizacao {
   height: 43px;
 }
-.caixa-avaliacao{
-  display: flex;
-  flex-direction: row;
-  font-size: 18px;
-}
-.caixa-avaliacao p{
-  padding-top: 8px;
-  padding-left: 10px;
-}
-.caixa-localizacao-endereco{
+
+.caixa-avaliacao {
   display: flex;
   flex-direction: row;
   font-size: 18px;
 }
 
-.caixa-nome{
+.caixa-avaliacao p {
+  padding-top: 8px;
+  padding-left: 10px;
+}
+
+.caixa-localizacao-endereco {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+}
+
+.caixa-nome {
   font-size: 24px;
 }
 
@@ -377,10 +388,11 @@ form {
   font-size: 18px;
   max-width: 103px;
 }
-.caixa-localizacao-endereco-resHtml{
-    display: flex;
-    flex-direction: row;
-    font-size: 18px;
+
+.caixa-localizacao-endereco-resHtml {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
 }
 
 .endereco-hora {
@@ -390,7 +402,7 @@ form {
   gap: 15px;
 }
 
-.caixa-hora-hora{
+.caixa-hora-hora {
   display: flex;
   flex-direction: row;
   gap: 15px;
@@ -400,7 +412,7 @@ form {
   gap: 20px;
   font-size: 20px;
   font-weight: bolder;
-  color: #023047; 
+  color: #023047;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 0;
@@ -427,7 +439,7 @@ form {
   height: 20px;
 }
 
-.menu-nav-list-item-div{
+.menu-nav-list-item-div {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -435,15 +447,16 @@ form {
   font-size: 22px;
   color: rgb(0, 0, 0);
   padding: 10px 20px;
-  border-radius: 30px;  
-  
+  border-radius: 30px;
+
 }
 
-.active-menu{
+.active-menu {
   background-color: #023047;
   color: white;
   border-radius: 30px;
 }
+
 .card-container {
   display: flex;
   flex-direction: row;
@@ -454,11 +467,12 @@ form {
   padding-bottom: 10px;
   max-width: 80vw;
 }
+
 .card {
   border-radius: 8px;
   overflow: hidden;
   max-width: 245px;
-  position: relative; 
+  position: relative;
   flex: 0 0 auto;
 }
 
@@ -491,8 +505,8 @@ form {
 }
 
 .card img {
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
   height: 286px;
   object-fit: cover;
   object-position: center;
@@ -502,13 +516,13 @@ form {
 .conteudo-do-card {
   display: flex;
   position: absolute;
-  bottom: 10px; 
+  bottom: 10px;
   left: 10px;
   flex-direction: column;
   color: white;
   padding: 10px;
   z-index: 2;
-  max-width: 90%; 
+  max-width: 90%;
 }
 
 .botao-order {
@@ -522,29 +536,31 @@ form {
 }
 
 .botao-order img {
-  max-width: 9px; 
+  max-width: 9px;
   height: auto;
 }
 
 .card-slider {
   display: flex;
   align-items: center;
-  position: relative; 
+  position: relative;
   max-width: 100%;
 }
+
 .categorias-populares {
   padding-top: 20px;
-  background-color: #f4f4f4;  
+  background-color: #f4f4f4;
   max-width: 1440px;
   margin: 0 auto;
 }
+
 .categPop-titulo {
   font-size: 36px;
   font-family: poppins, sans-serif;
   padding: 40px 150px;
   margin-top: 20px;
   font-weight: bolder;
-  color:#023047;
+  color: #023047;
   max-width: 1440px;
 }
 
@@ -561,21 +577,22 @@ form {
   flex-direction: row;
   gap: 20px;
 }
-.destaques-titulo{
+
+.destaques-titulo {
   font-size: 36px;
   font-family: poppins, sans-serif;
-  color:#023047;
+  color: #023047;
   font-weight: bolder;
   margin-left: 150px;
 }
 
 .caixa-pop {
   background-color: white;
-  border-radius: 12px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
-  gap: 8px; 
+  gap: 8px;
   margin-bottom: 200px;
   max-width: 361px;
   max-height: 375px;
@@ -605,6 +622,7 @@ form {
   display: flex;
   flex-direction: row;
 }
+
 .caixa-avaliacao-pop p {
   font-size: 18px;
   margin-left: 5px;
@@ -641,16 +659,19 @@ footer {
   font-family: Arial, sans-serif;
   flex: 1;
 }
+
 .logo2 {
   display: flex;
   height: 84px;
   width: 112px;
 }
+
 .redes-sociais {
   display: flex;
   height: 24px;
   width: 150px;
 }
+
 .footer-sobre {
   display: flex;
   flex-direction: column;
@@ -658,6 +679,7 @@ footer {
   font-family: Arial, sans-serif;
   flex: 1;
 }
+
 .footer-novidades {
   display: flex;
   flex-direction: column;
@@ -671,6 +693,7 @@ footer ul {
   list-style: none;
   padding: 0;
 }
+
 footer li {
   margin-bottom: 10px;
 }
@@ -688,6 +711,7 @@ footer li {
   font-family: arial, sans-serif;
   font-weight: bold;
 }
+
 .footer-novidades {
   display: flex;
   flex-direction: column;
@@ -727,4 +751,140 @@ footer li {
   gap: 10px;
   margin-bottom: 10px;
   width: 170px;
+}
+
+.index-nav-telinha {
+  display: none;
+  position: fixed;
+  background: #ffffff;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  transform: translateY(-20px);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+.menu-h {
+  display: none;
+}
+.buttons img {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .sectionIndex {
+    flex-direction: column;
+  }
+
+  .leftCacto {
+    width: 300px;
+  }
+
+  .subtitle {
+    width: 300px;
+  }
+
+  .formIndex input {
+    font-size: 15px;
+  }
+
+  .right {
+    display: flex;
+    margin-left: 350px;
+  }
+
+  .people {
+    width: 400px;
+  }
+
+  .pizza {
+    width: 200px;
+    top: 480px;
+  }
+
+  .categorias-populares {
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  .categ-pop-img {
+    max-width: 600px;
+  }
+  .destaques {
+    display: flex;
+    flex-direction: column;
+  }
+  .caixa-img-pop {
+    max-width: 270px;
+  }
+  .caixa-pop {
+    margin-bottom: 20px;
+  }
+  .indexFooter {
+    display: flex;
+    flex-direction: column;
+    margin-left: 160px;
+    min-width: 600px;
+  }
+  .logo img{
+    min-width: 300px;
+  }
+  .header-index {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttons {
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .index-nav-telinha {
+    width: 150px;
+    
+  }
+  .buttons img {
+    display: block;
+  }
+  .menu-h-button {
+    display: flex;
+    width: 30px;
+  }
+  .index-nav-telinha.active {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    background: white;
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-container-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .conteudo_about img {
+    display: none;
+  }
+  .textoAbout {
+    margin-left: 140px;
+    width: 350px;
+    margin-top: -70px;
+  }
+  #paragrafos {
+    font-size: 20px;
+  }
+  #sobreSerton {
+    font-size: 40px;
+  }
+  .f-about {
+    margin-top: -50px;
+  }
 }

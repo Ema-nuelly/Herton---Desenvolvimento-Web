@@ -9,11 +9,11 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="header-index">
             <div class="logo">
                 <img src="assets\images\logo.png" alt="Logo Serton" />
             </div>
-            <nav>
+            <nav class="index-nav">
                 <ul>
                     <li class="active"><a href="index.html">Página inicial</a></li>
                     <li><a href="about.html">Sobre nós</a></li>
@@ -21,8 +21,22 @@
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
+            <nav class="index-nav-telinha">
+                <ul>
+                    <li class="active"><a href="index.html">Página inicial</a></li>
+                    <li><a href="about.html">Sobre nós</a></li>
+                    <li><a href="categorias.html">Categorias</a></li>
+                </ul>
+            </nav>
+            
+            
             <div class="buttons">
+                <button  aria-label="Toggle menu">
+                    <img class="menu-h-button" src="assets/images/menu-icon.jpg" alt="Menu">
+                  </button>
+
                 <div>
+                    
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                     </svg>
@@ -45,7 +59,7 @@
         </header>
         <section class="sectionIndex">
             <div class="left">
-                <div>
+                <div class="leftCacto">
                     <img src="assets\images\cactus.png" class="cacto" alt="Cacto" />
                     <h1>Bem vindo</h1>
                     <h1>O <span class="orange">sertão</span><br>agora está <span class="orange">online</span></h1>
@@ -59,7 +73,7 @@
                 </div>
             </div>
             <div class="right">
-                <img src="assets\images\banner.png" alt="Banner" />
+                <img src="assets\images\banner.png" class="people" alt="Banner" />
                 <img src="assets\images\pizza.png" class="pizza" alt="Pizza" />
             </div>
         </section>
@@ -128,7 +142,7 @@
         
     </section>
      
-    <footer>
+    <footer class="indexFooter">
         <div class="logo-missao">
             <img src="assets\images\logo2.png" alt="" class="logo2">
             <p>Nossa missão é trazer o sertão para o mundo digital, valorizando e apoiando empreendedores locais</p>
@@ -153,5 +167,6 @@
             
         </div>
     </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
